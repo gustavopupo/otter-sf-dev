@@ -648,7 +648,7 @@ private with sharing class fflib_SObjectSelectorTest
 	}
 
 	private static User getLimitedReadOnlyUser(){
-		return fflib_SecurityUtilsTest.setupTestUser('Read Only');
+		return fflib_SecurityUtilsTest.setupTestUser('Minimum Access - Salesforce');
 	}
 
 	@isTest

@@ -82,7 +82,7 @@ private class fflib_SecurityUtilsTest {
 	static User setupTestUser(String profileName){
 		Profile p;
 		Boolean applyReadOnlyPermissionSet = false;
-		if (profileName == 'Read Only') {
+		if (profileName == 'Read Only' || profileName == 'Minimum Access - Salesforce') {
 			applyReadOnlyPermissionSet = true;
 			try {
 				p = getProfile(profileName);
